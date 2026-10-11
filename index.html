@@ -1,10 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manish Sah | Founding Product Engineer</title>
+  <meta name="description" content="Manish Sah — Founding Product Engineer at KIPIO, building an AI security product. 7+ years building backend systems in Python, Rust and Go, IoT integrations, and services on AWS and GCP.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
-<body>
-<h1 style="text-align: center;">Hello World</h1>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand"><span>Manish Sah</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#work">Work</a>
+        <a href="#open-source">Open source</a>
+        <a href="#recommendations">Recommendations</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="assets/Manish_Sah_Resume.pdf" target="_blank" rel="noopener" class="btn btn-header-resume">Resume</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-photo" aria-hidden="true">MS</div>
+        <div class="hero-copy">
+          <p class="hero-kicker">Founding Product Engineer, KIPIO</p>
+          <h1>Building an AI-powered security product, backed by 7+ years of backend and cloud engineering.</h1>
+          <p class="hero-lead">Founding product engineer at KIPIO, building an AI security product that protects sensitive data as teams adopt AI tools. Previously a Team Lead who mentored engineers while building Python microservices, asynchronous pipelines and AWS event-driven architectures. I work AI-first, with TDD and strict code review keeping quality high.</p>
+          <p class="hero-availability"><i class="fas fa-location-dot" aria-hidden="true"></i> Kathmandu, Nepal</p>
+          <div class="hero-actions">
+            <a href="mailto:sahmanish20@gmail.com" class="btn btn-primary">Email me</a>
+            <a href="assets/Manish_Sah_Resume.pdf" target="_blank" rel="noopener" class="btn btn-tertiary"><i class="fas fa-file-arrow-down" aria-hidden="true"></i> Download resume</a>
+          </div>
+          <div class="hero-social">
+            <a href="mailto:sahmanish20@gmail.com" title="Email"><i class="fas fa-envelope"></i><span>Email</span></a>
+            <a href="tel:+9779843112184" title="Phone"><i class="fas fa-phone"></i><span>+977 9843112184</span></a>
+            <a href="https://www.linkedin.com/in/manish-sah/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+            <a href="https://github.com/csemanish12" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i><span>GitHub</span></a>
+            <a href="https://www.youtube.com/@DevAndBeyond" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i><span>YouTube</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section-padding">
+      <div class="container">
+        <h2>Selected work</h2>
+        <p class="section-intro">The problem, what I did, and the result.</p>
+        <div class="work-grid">
+          <article class="work-card">
+            <p class="work-label">AI security · Founding engineer</p>
+            <h3>KIPIO</h3>
+            <p><strong>Problem:</strong> teams adopting AI tools risk leaking sensitive data through prompts and file uploads.</p>
+            <p><strong>What I did:</strong> built the endpoint DLP agent in Rust as primary author, and ported the policy engine from Python to Go as a standalone service on GCP.</p>
+            <p><strong>Result:</strong> an agent that enforces admin-defined data policies on employee devices in real time.</p>
+          </article>
+          <article class="work-card">
+            <p class="work-label">Connectivity · Backend &amp; leadership</p>
+            <h3>Elsight</h3>
+            <p><strong>Problem:</strong> drones and robots operating beyond visual line of sight can't afford to lose their link to the ground station. Halo keeps them connected by combining cellular, radio and satellite into one secure connection.</p>
+            <p><strong>What I did:</strong> built backend services across Halo's cloud fleet-management services and the software on each device, including integrating a newer 4G modem from our modem provider and per-device usage metering for billing. Grew to Team Lead, also acting as tech lead and Scrum Master, and led work such as the device telemetry pipeline.</p>
+            <p><strong>Result:</strong> Halo gained support for newer 4G modem hardware, billing is based on actual connection time, and features shipped end to end with product, QA, DevOps and support.</p>
+          </article>
+          <article class="work-card">
+            <p class="work-label">Healthcare · E-health</p>
+            <h3>Jeevee Health</h3>
+            <p><strong>Problem:</strong> Jeevee's goal was to digitize health services in Nepal, from booking a doctor to buying health products, so patients no longer had to do everything in person.</p>
+            <p><strong>What I did:</strong> built the core e-health backend from the initial design phase: online appointments for patients, doctor and schedule management for clinics, and vaccination bookings. Also built ordering and delivery for health products, payment integrations, and a blood request system that notifies matching donors.</p>
+            <p><strong>Result:</strong> patients could book clinic and vaccination appointments online, order health products for delivery, and find matching blood donors, all on one platform.</p>
+          </article>
+        </div>
+        <p class="work-footnote"><a href="about.html#experience">See full experience</a></p>
+      </div>
+    </section>
+
+    <section id="open-source" class="section-padding oss-section">
+      <div class="container">
+        <h2>Open source</h2>
+        <p class="section-intro">Merged contributions to projects I use and care about.</p>
+        <div class="oss-grid">
+          <article class="oss-card">
+            <p class="work-label">Canonical · 9 merged PRs</p>
+            <h3>cloud-init</h3>
+            <p>Migrated test suites from unittest to pytest in the tool that initializes cloud instances across major cloud providers.</p>
+            <a href="https://github.com/canonical/cloud-init/pulls?q=is%3Apr+is%3Amerged+author%3Acsemanish12" target="_blank" rel="noopener">View PRs <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </article>
+          <article class="oss-card">
+            <p class="work-label">Feature · Merged</p>
+            <h3>Cadwyn</h3>
+            <p>Added <code>json_schema_extra</code> support to schema version changes in Cadwyn, an API versioning library for FastAPI.</p>
+            <a href="https://github.com/zmievsa/cadwyn/pulls?q=is%3Apr+is%3Amerged+author%3Acsemanish12" target="_blank" rel="noopener">View PR <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </article>
+          <article class="oss-card">
+            <p class="work-label">Google · Merged</p>
+            <h3>gcp_scanner</h3>
+            <p>Fixed handling of bad credential keyfiles in Google's GCP resource scanner.</p>
+            <a href="https://github.com/google/gcp_scanner/pulls?q=is%3Apr+is%3Amerged+author%3Acsemanish12" target="_blank" rel="noopener">View PR <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="recommendations" class="recs-section section-padding">
+      <div class="container">
+        <h2>Recommendations</h2>
+        <p class="section-intro">From managers, mentors and colleagues.</p>
+        <div class="recs-grid">
+          <article class="rec-card rec-card-featured">
+            <blockquote><p>As a colleague and later as a Team Lead, he created an open and collaborative atmosphere where engineers felt heard, supported, and motivated. He never reaches for quick fixes without thoroughly understanding the root cause, system constraints, and long-term implications.</p></blockquote>
+            <div class="rec-person">
+              <span class="rec-initials" aria-hidden="true">EA</span>
+              <div>
+                <strong>Eido Askayo</strong>
+                <span>Senior Software Engineer, worked with Manish at Elsight</span>
+              </div>
+            </div>
+          </article>
+          <article class="rec-card">
+            <blockquote><p>Manish joined the company as a fresher and soon after he joined the company, it was clear that he is an exceptionally talented and a very hard working developer.</p></blockquote>
+            <div class="rec-person">
+              <span class="rec-initials" aria-hidden="true">MN</span>
+              <div>
+                <strong>Mohammed Naved</strong>
+                <span>Managed Manish directly at Jeevee Health</span>
+              </div>
+            </div>
+          </article>
+          <article class="rec-card">
+            <blockquote><p>I&#39;ve seen him not only excel at building backend services but also DevOps, performance optimization of the application. He digs into the core of problems.</p></blockquote>
+            <div class="rec-person">
+              <span class="rec-initials" aria-hidden="true">RK</span>
+              <div>
+                <strong>Rajesh Khadka</strong>
+                <span>Manish&#39;s mentor at Jeevee Health</span>
+              </div>
+            </div>
+          </article>
+          <article class="rec-card">
+            <blockquote><p>He has impressed us with his skills, analytical thinking and his eagerness to take on challenges. He is not afraid to bring out new ideas and try it out.</p></blockquote>
+            <div class="rec-person">
+              <span class="rec-initials" aria-hidden="true">DT</span>
+              <div>
+                <strong>Dipak Thapa</strong>
+                <span>Senior colleague at Jeevee Health</span>
+              </div>
+            </div>
+          </article>
+          <article class="rec-card">
+            <blockquote><p>He is highly adaptable, encouraging, supportive, and an amazing programmer. I learned a lot from him as a person and as an engineer.</p></blockquote>
+            <div class="rec-person">
+              <span class="rec-initials" aria-hidden="true">AB</span>
+              <div>
+                <strong>Aashish Bhandari</strong>
+                <span>Worked with Manish on a different team at Elsight</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="work-footnote">Full reference letters available on request. <a href="https://www.linkedin.com/in/manish-sah/details/recommendations/" target="_blank" rel="noopener">More recommendations on LinkedIn</a></p>
+        <div class="about-teaser">
+          <p class="work-label">About</p>
+          <h3>Want to know more?</h3>
+          <p>My full experience, skills, education and teaching live on a separate page.</p>
+          <a href="about.html" class="btn btn-primary">More about me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-card-details">
+            <h2>Let's connect</h2>
+            <p class="contact-lead">Happy to connect about AI security, backend systems, Rust, Go or Python. Reach out any time.</p>
+            <ul class="contact-list">
+              <li>
+                <a href="mailto:sahmanish20@gmail.com">
+                  <span class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                  <span class="contact-copy"><span class="contact-label">Email</span><span class="contact-value">sahmanish20@gmail.com</span></span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+9779843112184">
+                  <span class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
+                  <span class="contact-copy"><span class="contact-label">Phone</span><span class="contact-value">+977 9843112184</span></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/manish-sah/" target="_blank" rel="noopener">
+                  <span class="contact-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></span>
+                  <span class="contact-copy"><span class="contact-label">LinkedIn</span><span class="contact-value">manish-sah</span></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/csemanish12" target="_blank" rel="noopener">
+                  <span class="contact-icon"><i class="fab fa-github" aria-hidden="true"></i></span>
+                  <span class="contact-copy"><span class="contact-label">GitHub</span><span class="contact-value">csemanish12</span></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@DevAndBeyond" target="_blank" rel="noopener">
+                  <span class="contact-icon"><i class="fab fa-youtube" aria-hidden="true"></i></span>
+                  <span class="contact-copy"><span class="contact-label">YouTube</span><span class="contact-value">Dev &amp; Beyond</span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-card-form">
+            <form id="contactForm">
+              <input type="text" name="_honey" class="honey-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <label class="sr-only" for="sender">Your email</label>
+              <input id="sender" type="email" name="email" placeholder="Your email" required>
+              <label class="sr-only" for="subject">Subject</label>
+              <input id="subject" type="text" name="subject" placeholder="Subject" required>
+              <label class="sr-only" for="message">Your message</label>
+              <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+              <button type="submit" class="btn btn-primary">Send message</button>
+              <div id="contact-status" role="status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Manish Sah. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js?v=1"></script>
 </body>
 </html>

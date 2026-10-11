@@ -1,3 +1,6 @@
 .idea
 .idea/*
 *.pyc
+.DS_Store
+.claude/
+resume.html
